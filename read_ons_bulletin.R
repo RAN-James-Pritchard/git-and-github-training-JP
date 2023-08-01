@@ -3,6 +3,7 @@
 #Set up a function to neatly read the file in
 read_release <- function(){
   #Read all HTML
+  
   pg <- read_html("https://www.ons.gov.uk/")
  
   ##Keep the text content only
@@ -23,6 +24,7 @@ read_dates <- function(){
 
   #Read all HTML
   pg <- read_html("https://www.ons.gov.uk")
+
   
   ##Keep the text content only
   text_only <- html_text(html_nodes(pg,'p'))
